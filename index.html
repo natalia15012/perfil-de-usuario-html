@@ -1,5 +1,5 @@
 </html><!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +9,62 @@
 
 <body>
     <header>
-        <h1>Perfil de Usuario</h1>
+        <h1>Mi Perfil de Usuario.</h1>
+        <img src="imagen/icono.png" alt="Foto de Perfil." width="150">
     </header>
     
+
     <main>
     <article> 
-        <p>Esto es article</p>
+        <h2>Biografía.</h2>
+        <p>Hola soy Natalia, estoy aprendiendo a desarrollar páginas web.</p>
     </article>
     </main>
 
-    <table>
+    <h2>detalles de contacto.</h2>
+    <section>
+       <table border="1">
         <caption>Información de contacto.</caption>
-        <thead>encabezado</thead>
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Información</th>
+            </tr>
+        </thead>
         <tbody>
-
+            <tr>
+                <td>Email</td>
+                <td>natalia@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td>2612224444</td>
+            </tr>
         </tbody>
-       <p><tfoot>pie de tabla</tfoot></p> 
-    </table>
-    
+         <tfoot>
+           <tr><td colspan="2">Última actualización: 28/08/25</td></tr>
+          </tfoot>
+        </table> 
+    </section>
+       
+    <section>
+         <h2>Actualizar Perfil</h2>
+        <form>
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="5"><br><br>
+
+            <label for="correo">Correo elecrónico: </label><br>
+            <input type="text" name="correo" id="correo" required><br><br>
+
+            <label for="edad">Edad: </label><br>
+            <input type="number" name="edad" id="edad" required min="13" max="100"> <br><br>
+
+            <label for="fecha">Fecha de nacimiento: </label> <br>
+            <input type="date" name="fecha" id="fecha" required> <br><br>
+
+            <button type="submit">Actualizar</button>
+        </form>
+    </section>
     <footer>
         <p>Este es un perfil privado.</p>
     </footer>
